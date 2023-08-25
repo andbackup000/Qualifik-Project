@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
+  margin-bottom: -4rem;
 
   > section {
     width: 100%;
@@ -26,10 +27,13 @@ export const Container = styled.section`
 
 export const ItemContainer = styled.div`
   > div {
+    margin-top: -2rem;
     background: ${({ theme }) => theme.gradient};
     padding: 1rem;
     padding-top: 2.5rem;
-    height: 20rem;
+    height: 23rem;
+    border: solid;
+    border-radius: 5%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -66,7 +70,7 @@ export const ItemContainer = styled.div`
   }
 
   &:nth-child(even) > div {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   @media (max-width: 1000px) {

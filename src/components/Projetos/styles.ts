@@ -12,11 +12,13 @@ export const Container = styled.section`
   align-items: center;
   gap: 5rem;
 
+
   > section {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 4rem;
+ 
 
     @media (max-width: 1000px) {
       gap: 2rem;
@@ -29,6 +31,7 @@ export const Container = styled.section`
     border-radius: 0.5rem;
     border: none;
     transition: 0.5s;
+    
 
     &:hover {
       background: ${({ theme }) => darken(0.05, theme.primary)};
@@ -56,6 +59,8 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
   height: 25rem;
   align-items: flex-end;
   position: relative;
+  
+  
 
   &:hover {
     > section {
@@ -64,7 +69,7 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
       }
 
       > div.overlay {
-        opacity: 0.4;
+        opacity: 0.33;
       }
     }
 
@@ -96,14 +101,16 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
     background: url(${props => props.imgUrl}) no-repeat center;
     background-size: cover;
     position: relative;
+    border-radius: 5%; 
 
     > div.overlay {
       position: absolute;
       width: 100%;
       height: 100%;
       background: ${({ theme }) => theme.gradient};
-      opacity: 0.75;
+      opacity: 0.80;
       transition: 0.5s;
+      border-radius: 5%; 
     }
 
     > div.text {

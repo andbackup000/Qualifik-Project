@@ -1,18 +1,23 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import { Container, Image1, Image2, TextContainer, InfosContainer, CodeItem } from './styles';
-import picture from '../../assets/Imagem_1.png';
-import photo from '../../assets/desenho2.png'
-import Typical from 'react-typical'
+import { Container, Imagem, Image1, Image2, Logo, TextContainer, InfosContainer, CodeItem } from './styles';
+import image from '../../assets/Fabio-IA.png';
+import picture from '../../assets/EngImage1-removed.png';
+import photo from '../../assets/EngImage2-removed.png';
+import LOGO from '../../assets/Qualifik-LOGO-Limpa.png';
 
 function HomeHero() {
   return (
-    <Container data-aos="fade-up">
-      <Image1 src={picture} alt="Minha foto" />
-      <Image2 src={photo} alt="Minha foto2" />
+    <Container >
+      <Imagem src={image} alt="FABIO" data-aos="zoom-in-right"/>
+      <Image1 src={picture} alt="Eng1" data-aos="fade-up"/>
+      <Image2 src={photo} alt="Eng2" data-aos="zoom-in"/>
+      <Logo src={LOGO} alt='Qualifik' data-aos="zoom-out-up"/>
       <div>
         <TextContainer>
-          <h1>Hello!</h1>
-          <h2>
+          <ul>
+          </ul>
+
+{/*           <h2>
             {''}
             <Typical
               loop={Infinity}
@@ -23,34 +28,8 @@ function HomeHero() {
                 3000
               ]}
             />
-          </h2>
+          </h2> */}
         </TextContainer>
-        <InfosContainer>
-          <CodeItem data-aos="zoom-in">
-            <span className="comment">//About me</span>
-            <span className="purple">Infos</span> {'\u007B'}
-            <div>
-              Name: <span className="blue"> André</span>
-            </div>
-            <div>
-              Last name: <span className="blue"> Abreu de Sá</span>
-            </div>
-            {'\u007D'}
-          </CodeItem>
-          <CodeItem data-aos="zoom-in">
-            <span className="purple">Employ</span> {'\u007B'}
-            <div>
-              Function: <span className="blue"> Developer</span>
-            </div>
-            <div>
-              Type: <span className="blue"> Fullstack</span>
-            </div>
-            <div>
-              Location: <span className="blue"> Montes Claros, Brasil</span>
-            </div>
-            {'\u007D'}
-          </CodeItem>
-        </InfosContainer>
       </div>
     </Container>
   );

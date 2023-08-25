@@ -15,14 +15,14 @@ export default function ProjetoItem({ title, type, slug, img }: ProjetoProps) {
       <section>
         <div className="overlay" />
         <div className="text">
-          <h1># {title}</h1>
-          <h2>- {type}</h2>
+          <h1> {title}</h1>
+          <h2> {type}</h2>
         </div>
       </section>
       <button type="button">
         <Link href={`/projetos/${slug}`}>
           <a>
-            See more <AiOutlineRightCircle />
+            Veja mais <AiOutlineRightCircle />
           </a>
         </Link>
       </button>

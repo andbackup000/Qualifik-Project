@@ -20,6 +20,7 @@ export const Container = styled.section`
   @media (max-width: 1450px) {
     > img {
       width: 30rem;
+      align-self: flex-start;
     }
 
     > div {
@@ -27,11 +28,6 @@ export const Container = styled.section`
     }
   }
 
-  @media (max-width: 1000px) {
-    > img {
-      width: 22rem;
-    }
-  }
 
   @media (max-width: 700px) {
     flex-direction: column;
@@ -41,16 +37,127 @@ export const Container = styled.section`
   }
 `;
 
-export const Image1 = styled.img`
-  @media (max-width: 700px) {
-    display: none;
+export const Imagem = styled.img`
+  @media (max-width: 3000px) {
+    display: flex;
+    position: relative;
+    top: 5rem;
+    height: 30rem;
+    left: 28rem;
   }
+
+  @media (max-width: 1450px) {
+    display: flex;
+    position: relative;
+    top: 6rem;
+    height: 24rem;
+    left: 24rem;
+  }
+
+  @media (max-width: 1000) {
+    display: flex;
+    position: relative;
+    top: 5rem;
+    height: 10rem;
+    left: 13rem;
+  }
+
+  @media (max-width: 700px) {
+    display: flex;
+    position: relative;
+    margin-left: -25rem;
+    margin-top: -8rem;
+    }
+
 `
 export const Image2 = styled.img`
-  @media (min-width: 701px) {
-    display: none;
+  @media (max-width: 3000px) {
+    display: flex;
+    position: relative;
+    top: 11rem;
+    height: 18rem;
+    left: -30rem;
   }
+
+  @media (max-width: 1450px) {
+    display: flex;
+    position: relative;
+    top: 13rem;
+    height: 17rem;
+    left: -20rem;
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+    position: relative;
+    top: 13rem;
+    height: 17rem;
+    left: -17rem;
+  }
+
+  @media (max-width: 700px) {
+      display: none;
+    }
+
 `
+
+export const Image1 = styled.img`
+  @media (max-width: 3000px) {
+    display: flex;
+    position: relative;
+    top: 5rem;
+    height: 30rem;
+    left: 17rem;
+  }
+
+  @media (max-width: 1450px) {
+    display: flex;
+    position: relative;
+    top: 6rem;
+    height: 24rem;
+    left: 17rem;
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+    position: relative;
+    top: 6rem;
+    height: 24rem;
+    left: 20rem;
+  }
+
+  @media (max-width: 700px) {
+      display: none;
+    }
+`
+  export const Logo = styled.img`
+    @media (max-width: 3000px) {
+      display: flex;
+      position: relative;
+      top: -3rem;
+      left: -33rem;
+    }
+
+    @media (max-width: 1450px) {
+      display: flex;
+      position: relative;
+      top: -3rem;
+      left: -27rem;
+    }
+
+    @media (max-width: 1000px) {
+      display: flex;
+      position: relative;
+      height: 10rem;
+      top: -1rem;
+      left: -30rem;
+    }
+
+    @media (max-width: 700px) {
+      display: none;
+    }
+
+  `
 
 
 export const TextContainer = styled.section`

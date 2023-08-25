@@ -10,11 +10,11 @@ import { Container } from './styles';
 function Conhecimentos() {
   return (
     <Container>
-      <SectionTitle title="Skills" />
+      <SectionTitle title="Parceiros" />
       <section>
-        <ConhecimentoItem title="HTML" icon={<AiFillHtml5 />} />
-        <ConhecimentoItem title="CSS" icon={<FaCss3Alt />} />
-        <ConhecimentoItem title="Javascript" icon={<IoLogoJavascript />} />
+        <ConhecimentoItem title="CAA" icon={<AiFillHtml5 />} />
+        <ConhecimentoItem title="Coop. Grande Sertão" icon={<FaCss3Alt />} />
+        <ConhecimentoItem title="Núcleo do Pequi" icon={<IoLogoJavascript />} />
         <ConhecimentoItem title="React" icon={<FaReact />} />
         <ConhecimentoItem title="Tailwind" icon={<SiTailwindcss />} />
         <ConhecimentoItem title="Node" icon={<DiNodejsSmall />} />

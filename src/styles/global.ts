@@ -1,5 +1,6 @@
 import { lighten } from 'polished';
 import { createGlobalStyle } from 'styled-components';
+import Background from '../assets/BackInvertido.svg'
 
 export default createGlobalStyle`
   * {
@@ -22,8 +23,18 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.background};
-    font: 400 1rem 'Montserrat', sans-serif;
+    background: ${({ theme }) => theme.background};
+/*     background-image: url(${Background}) ;
+    background-repeat: no-repeat;
+    background-position-y: -10.4rem;
+    background-size: contain; 
+    font: 400 1rem 'Montserrat', sans-serif; */
+
+    @media(max-width:700px) {
+      padding: 0 2rem;
+    }
+
+    
   }
 
   img {
@@ -46,6 +57,8 @@ export default createGlobalStyle`
   .container {
     width: 100%;
     margin: 0 auto;
+/*     border-right: solid;
+    border-left: solid; */
     max-width: 85rem;
     padding: 0 1rem;
     @media(max-width:1450px) {
