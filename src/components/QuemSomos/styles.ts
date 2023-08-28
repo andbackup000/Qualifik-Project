@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin-top: 10rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.5rem;
   border-radius: 20%;
   position: relative;
-  left: 25%;
+  left: 18%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 70%;
   height: 80%;
   background-color: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};

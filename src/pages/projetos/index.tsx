@@ -5,6 +5,7 @@ import Header from '../../components/Header';
 import ProjetoItem from '../../components/ProjetoItem';
 import { getPrismicClient } from '../../services/prismic';
 import { ProjetosContainer } from '../../styles/ProjetosStyles';
+import { proRealizado } from '../../data/[...data]';
 
 interface IProjeto {
   slug: string;
@@ -19,11 +20,11 @@ interface ProjetoProps {
   projetos: IProjeto[];
 }
 
-export default function Projetos({ projetos }: ProjetoProps) {
+export default function Projetos() {
   return (
     <ProjetosContainer>
       <Head>
-        <title>Projcts | My portfólio</title>
+        <title>Projetos | Qualifik Engenharia</title>
         <meta
           name="description"
           content="Sou um desenvolvedor Front-end e aqui apresento alguns projetos desenvolvidos por mim!"
@@ -40,13 +41,13 @@ export default function Projetos({ projetos }: ProjetoProps) {
 
       <Header />
       <main className="container">
-        {projetos.map(projeto => (
+        {proRealizado.map(proRealizado => (
           <ProjetoItem
-            key={projeto.slug}
-            title={projeto.title}
-            type={projeto.type}
-            slug={projeto.slug}
-            imgUrl={projeto.thumbnail}
+            key={proRealizado.slug}
+            title={proRealizado.title}
+            type={proRealizado.type}
+            slug={proRealizado.slug}
+            imgUrl={proRealizado.thumbnail}
           />
         ))}
       </main>
@@ -54,7 +55,7 @@ export default function Projetos({ projetos }: ProjetoProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+/* export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient();
 
   const projectResponse = await prismic.query(
@@ -78,3 +79,4 @@ export const getStaticProps: GetStaticProps = async () => {
     revalidate: 86400
   };
 };
+ */

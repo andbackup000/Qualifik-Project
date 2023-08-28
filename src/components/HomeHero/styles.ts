@@ -8,6 +8,7 @@ export const Container = styled.section`
   justify-content: center;
   margin-top: 5rem;
 
+
   > img {
     width: 40rem;
     flex: 1;
@@ -49,7 +50,7 @@ export const Imagem = styled.img`
   @media (max-width: 1450px) {
     display: flex;
     position: relative;
-    top: 6rem;
+    top: 3rem;
     height: 24rem;
     left: 24rem;
   }
@@ -83,15 +84,15 @@ export const Image2 = styled.img`
     display: flex;
     position: relative;
     top: 13rem;
-    height: 17rem;
+    height: 14rem;
     left: -20rem;
   }
 
   @media (max-width: 1000px) {
     display: flex;
     position: relative;
-    top: 13rem;
-    height: 17rem;
+    top: 12rem;
+    height: 15rem;
     left: -17rem;
   }
 
@@ -113,7 +114,7 @@ export const Image1 = styled.img`
   @media (max-width: 1450px) {
     display: flex;
     position: relative;
-    top: 6rem;
+    top: 3rem;
     height: 24rem;
     left: 17rem;
   }
@@ -122,7 +123,7 @@ export const Image1 = styled.img`
     display: flex;
     position: relative;
     top: 6rem;
-    height: 24rem;
+    height: 21rem;
     left: 20rem;
   }
 

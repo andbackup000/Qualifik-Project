@@ -21,7 +21,7 @@ export const Container = styled.header`
     
 
     > img {
-      margin-left 1rem;
+      margin-left: 1rem;
       width: 8rem;
       flex: 1;
     }

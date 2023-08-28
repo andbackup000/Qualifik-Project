@@ -3,7 +3,8 @@ import {
   AiOutlineGithub,
   AiFillLinkedin
 } from 'react-icons/ai';
-import { Container } from './styles';
+import { Container, ImageLogo } from './styles';
+import LOGO from '../../assets/Qualifik-LOGO.png';
 
 function Footer() {
   function handleRedirect(url: string) {
@@ -21,7 +22,7 @@ function Footer() {
     <Container>
       <div className="container">
         <button type="button" onClick={handleScrollTop}>
-          Back to Top
+          <ImageLogo src={LOGO} alt="logo" />
         </button>
         <section>
           <AiOutlineGithub

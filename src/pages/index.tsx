@@ -7,7 +7,7 @@ import { HomeContainer } from '../styles/HomeStyles';
 
 import Header from '../components/Header';
 import HomeHero from '../components/HomeHero';
-import Experiencias from '../components/Experiencias';
+import Experiencias from '../components/Valores';
 import Projetos from '../components/Projetos';
 import Conhecimentos from '../components/Conhecimentos';
 import FormContato from '../components/FormContato';
@@ -39,7 +39,7 @@ export default function Home({ projetos }: HomeProps) {
   return (
     <HomeContainer>
       <Head>
-        <title>Home | My portfolio</title>
+        <title>Home | Qualifik Engenharia</title>
         <meta
           name="description"
           content="Sou um desenvolvedor Front-end e aqui apresento alguns projetos desenvolvidos por mim!"
@@ -59,9 +59,9 @@ export default function Home({ projetos }: HomeProps) {
       <main className="container">
         <HomeHero />
         <QuemSomos />
-        <Experiencias />
         <ServicesPage />
-        <Projetos projetos={projetos} />
+        <Experiencias />
+        <Projetos  />
         <Conhecimentos />
         <FormContato />
       </main>

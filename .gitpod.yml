@@ -3,7 +3,7 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - init: nvm install 16.18.1 
-    command: yarn install
+  - init: nvm install 16.18.1 && yarn install
+    command: nvm install 16.18.1
 
 

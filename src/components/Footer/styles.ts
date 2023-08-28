@@ -9,11 +9,12 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: center;
 
+  
   > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    
     button {
       background: none;
       border: none;
@@ -56,3 +57,7 @@ export const Container = styled.footer`
     }
   }
 `;
+
+export const ImageLogo  = styled.img`
+  width: 8rem;
+`
